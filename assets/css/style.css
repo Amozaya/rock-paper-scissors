@@ -18,20 +18,15 @@ body {
     font-family: "Coming Soon", sans-serif;
     color: rgb(80, 80, 109);
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .heading {
     text-align: center;
-    width: 100%;
-    position: relative;
+    font-size: 2rem;
+    font-weight: 400;
+    
 }
-
-h1 {
-    font-size: 4rem;
-    text-align: center;
-    position: absolute;
-}
-
 
 .container{
     position: relative;
@@ -47,5 +42,26 @@ h1 {
 }
 
 .result_images img{
-    width: 200px;
+    width: 150px;
+    margin: 2rem;
+}
+
+.computer_result img{
+    transform: scaleX(-1);
+} 
+
+.option img{
+    width: 75px;
+}
+
+.option_images {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.option p{
+    font-size: 1rem;
+    margin-top: 1rem;
 }
