@@ -38,13 +38,12 @@ optionImages.forEach ((image, index) => {
 
        // Generate random number between 0 and 4
        let randomNumber = Math.floor(Math.random() * 5);
-       console.log(randomNumber);
-
+       
        // Add variable to store src path to the images for computer guess
        let computerImages = ["assets/images/rock.jpg", "assets/images/paper.jpg", "assets/images/scissors.jpg", "assets/images/lizzard.jpg", "assets/images/spok.jpg"]
 
        // Replace computer result image with randomly generated one every time player makes a guess
-       computerResult.src = computerImages[randomNumber] 
+       computerResult.src = computerImages[randomNumber]; 
        
        
        // Assign a text value to the computer option (based on generated random number)(R -rock, P - paper, S - scissors, L - lizzard, SP - Spok)
@@ -84,6 +83,9 @@ optionImages.forEach ((image, index) => {
 
        // Check the value based on player selection and computer generated selection
        let outcomeValues = outcomes[playerValue + computerValue];
+
+       // Display the result of the match
+       result.textContent = playerValue === computerValue ? "Draw" : `You ${outcomeValues}`;
 
        console.log(outcomeValues);
 
