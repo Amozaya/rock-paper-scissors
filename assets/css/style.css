@@ -61,6 +61,23 @@ body {
     justify-content: space-between;
 }
 
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3 ease;
+}
+
+.option:hover{
+    opacity: 1;
+}
+
+.option.active{
+    opacity: 1;
+}
+
 .option p{
     font-size: 1rem;
     margin-top: 1rem;
