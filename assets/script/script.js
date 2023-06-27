@@ -87,9 +87,29 @@ optionImages.forEach ((image, index) => {
        // Display the result of the match
        result.textContent = playerValue === computerValue ? "Draw" : `You ${outcomeValues}`;
 
+       if (outcomeValues === "Win") {
+           incrementPlayerScore();
+       }
+
+       if (outcomeValues === "Loose") {
+        incrementComputerScore();
+        }
        console.log(outcomeValues);
 
     });
 });
 
 
+function incrementPlayerScore() {
+
+    let oldScore = parseInt(document.getElementById("player_score").innerText);
+    document.getElementById("player_score").innerText = ++oldScore;
+
+}
+
+function incrementComputerScore() {
+
+    let oldScore = parseInt(document.getElementById("computer_score").innerText);
+    document.getElementById("computer_score").innerText = ++oldScore;
+
+}

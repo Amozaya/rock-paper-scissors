@@ -27,6 +27,10 @@ body {
     font-weight: 400;    
 }
 
+.score_area {
+    margin-top: 3rem;
+}
+
 #player_score {
     color: green;
     font-weight: bold;
