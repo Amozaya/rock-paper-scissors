@@ -4,8 +4,7 @@ const userResult = document.querySelector(".user_result img");
 const computerResult = document.querySelector(".computer_result img");
 const result = document.querySelector(".result");
 optionImages = document.querySelectorAll(".option");
-const userScore = 0;
-const computerScore = 0;
+
 
 
 
@@ -94,22 +93,41 @@ optionImages.forEach ((image, index) => {
        if (outcomeValues === "Loose") {
         incrementComputerScore();
         }
-       console.log(outcomeValues);
-
+       
     });
 });
 
-
+// Function to increase players score when they win
 function incrementPlayerScore() {
-
     let oldScore = parseInt(document.getElementById("player_score").innerText);
     document.getElementById("player_score").innerText = ++oldScore;
+    if (oldScore === 5){
+        playerWon();
+       }
+}
+
+// function to increase computer score when player looses
+function incrementComputerScore() {
+    let oldScore = parseInt(document.getElementById("computer_score").innerText);
+    document.getElementById("computer_score").innerText = ++oldScore;
+    if (oldScore === 5){
+        computerWon();
+       }
 
 }
 
-function incrementComputerScore() {
+// Notify the player that they won and refresh the page to start a new game
+function playerWon() {
+    alert(`You WON the game. Congratulation! The page will be automatically refreshed after you click OK`);
+    setTimeout(function(){
+        window.location.reload(1);
+     });
+}
 
-    let oldScore = parseInt(document.getElementById("computer_score").innerText);
-    document.getElementById("computer_score").innerText = ++oldScore;
-
+// Notify the player that they lost and refresh the page to start a new game
+function computerWon() {
+    alert(`You lost the game. Better luck next time! The page will be automatically refreshed after you click OK`);
+    setTimeout(function(){
+        window.location.reload(1);
+     });
 }

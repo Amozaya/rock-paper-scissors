@@ -95,3 +95,10 @@ body {
     font-size: 1rem;
     margin-top: 1rem;
 }
+
+.instructions {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: red;
+}
