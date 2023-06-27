@@ -24,8 +24,17 @@ body {
 .heading {
     text-align: center;
     font-size: 2rem;
-    font-weight: 400;
-    
+    font-weight: 400;    
+}
+
+#player_score {
+    color: green;
+    font-weight: bold;
+}
+
+#computer_score {
+    color: red;
+    font-weight: bold;
 }
 
 .container{
