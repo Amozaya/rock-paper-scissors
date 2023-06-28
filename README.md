@@ -1,108 +1,139 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Game of "Rock Paper Scissors Lizzard Spoke"
 
-Welcome Oleg Fursa,
+The game of "Rock Paper Scissors Lizzard Spoke" is based on a traditional game of "Rock Paper Scissors" but with some new options to choose from to make the game more interesting.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+On this website user can play the game against a computer, which is based purely on your luck, as computer selects the options randomly and there is no way to predict what computer will select next. Whoever gets the 5 points first wins the game!
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsive Check Screenshot](assets/images/readme_images/responsivness.JPG)
 
-## Gitpod Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This section is describing all the existing features available on the website
 
-`python3 -m http.server`
+* **Heading**
 
-A blue button should appear to click: _Make Public_,
+-A simple heading greating the user to the game of "Rock Paper Scissors Lizzard Spoke"
 
-Another blue button should appear to click: _Open Browser_.
+-This section will welcome the player and tell them the name of the game
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Heading Screenshot](assets/images/readme_images/welcome_message.JPG)
 
-A blue button should appear to click: _Make Public_,
+* **Score Counter**
 
-Another blue button should appear to click: _Open Browser_.
+-Score Counter keeps track of player's and computer's points after each match. If player wins they get 1 point, if player looses computer gets 1 point, and if its a draw no one gets a point
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-This section will help user to keep a track of the score the game to see who is winning
 
-To log into the Heroku toolbelt CLI:
+![Score Counter Screenshot](assets/images/readme_images/score_counter.JPG)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* **Selections**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+-It shows the icon of the player's option and the icon of computer's randomly selected objects
 
-------
+-It will help player visually after each match to see what the selected options were
 
-## Release History
+![Selections Screenshot](assets/images/readme_images/players_and_computers_selections.JPG)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* **Player Options**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+-Before the game starts it consists of the message asking player to pick the first option, and then, after each match, this message will be replaced with the text saying the results of the match, if its "Win", "Loose", or a "Draw". Underneath the text player can see the icons for all the options available and whenever player clicks on the icon it will be their option fot the next match
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+-This is the main section for the gameplay as it gives the player information on how to start the match and what was the outcome of the match, as well as it allows player to select the option for each match
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Player Options Screenshot](assets/images/readme_images/players_options.JPG)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* **Rules**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+-Simple paragraph explaining to user when the game will be over
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+-It will notify the player about the rules of the game, when someone reaches 5 Wins the game will be over
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Rules Screenshot](assets/images/readme_images/rules.JPG)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* **Game Finished Message**
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+-Alert message notifying the player that they Won/Lost the game. Once player clicks on OK on the alert message th page will refresh and player can start a new game
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+-Depending on the outocme of the game player will receive the message saying that they won the game, or they lost the game, and after they click OK the page will refresh, meaining if player wants to start a new game they don't have to refresh the page manually
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Game Finished Message Screenshot](assets/images/readme_images/alert_message.JPG)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Testing
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+In this section I did some of the automated and manual tests in order to ensure that project is working correctly.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Validator Testing
 
-------
+* **HTML**
 
-## FAQ about the uptime script
+-First, using W3C Validator I received an error saying it's not allowed to use `<p>` element inside `<span>`:
 
-**Why have you added this script?**
+![HTML Error message](assets/images/readme_images/w3validator_error.JPG)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+After this error I've decided to change my code and replaced all `<p>` elements inside the `<span>` with another `<span>`:
 
-**How will this affect me?**
+![HTML fix](assets/images/readme_images/w3validator_fix.JPG)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+-Another warning I received after using W3C Validator  is the suggestion to use headings for <section> elements:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![HTML Warning message](assets/images/readme_images/w3_warning.JPG)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+I didn't use any `H1` elements for headings in this project, but instead I used `<div>` element with `<p>` inside it as my heading:
 
-**So….?**
+![Heading code snippet](assets/images/readme_images/heading_snippet.JPG)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+-And at the end the only message I received from W3C Validator is a warning about headings:
 
-**Can I opt out?**
+![W3C Validator complete](assets/images/readme_images/w3validator_complete.JPG)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* **CSS**
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+-I tested my website on CSS Validator and my code got approved:
 
-**Anything more?**
+![CSS Validator Approved](assets/images/readme_images/css_validator.JPG)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Chrome Lighthouse testing
 
----
 
-Happy coding!
+
+
+### Manual Testing
+
+In this section I did some manual testing, using various mobile devices, to ensure that website is responsive and adapts to different screen sizes.
+
+* **Sony mobile phone**
+
+-I used my Sony Xperia 1ii mobile phone in order to test my website on a smaller screen. Phone operates on Android 12 and uses Chrome browser:
+
+<img src="assets/images/readme_images/phone_test_gamescreen.png" alt="Sony phone Game Screen" width=50% height=50%>
+
+-Here is a screenshot of the "Game lost" message after I lost the game:
+
+<img src="assets/images/readme_images/phone_test_loosescreen.png" alt="Sony phone Loose message" width=50% height=50%>
+
+## Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://amozaya.github.io/rock-paper-scissors/
+
+
+## Credits
+
+**Content**
+
+* For inspiration and guidance for this project I used a <a href="https://www.youtube.com/watch?v=RC7NbjwP3QA">Youtube Tutorial</a>
+* Instructions on how to implement a page refresh with JavaScript I found on <a href="https://stackoverflow.com/questions/2787679/how-to-reload-page-every-5-seconds">StockOverflow</a>
+
+
+**Media**
+* The icons for the game options I got from <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=798194678"> Steam </a>
+
+
+
+
+
+
