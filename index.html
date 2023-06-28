@@ -10,16 +10,20 @@
     
     <section class="container">
         
-        <div class="result_field">
+        <!--Add heading to the game-->
+        <div class="result_field"> 
             <div class="heading">
                 <p>Welcome to the game of</p>
                 <p>Rock Paper Scissors Lizzard Spok</p>
             </div>
             
+            <!--Score counter for player and computer-->
             <div class="score_area">
                 <p class="scores">Player Wins <span id="player_score">0</span></p>
                 <p class="scores">Computer Wins <span id="computer_score">0</span></p>
             </div>
+
+            <!--Display the selected options for player and computer-->
             <div class="result_images">
                 <span class="user_result">
                     <img src="assets/images/lizzard.jpg" alt="lizzard">
@@ -28,7 +32,10 @@
                     <img src="assets/images/spok.jpg" alt="spok">
                 </span>
             </div>
-            <div class="result">Start playing by selecting your option!</div>
+            
+            <div class="result">Start playing by selecting your option!</div><!--Display the text to start the match which then will be replaced by the result of the match-->
+            
+            <!--List of icons with all the possible options for player to select-->
             <div class="option_images">
                 <span class="option" id="rock">
                     <img src="assets/images/rock.jpg" alt="rock">
@@ -51,11 +58,14 @@
                     <span>Spok</span>
                 </span>
             </div>
+
+            <!--Instructions on how to win/loose the game-->
             <div class="instructions">
                 <p>First one to get 5 points wins the game</p>                
             </div>
         </div>
     </section>
+
     <script src="assets/script/script.js"></script>
 </body>
 </html>

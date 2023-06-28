@@ -1,5 +1,4 @@
 // Get DOM elements
-const gameContainer = document.querySelector(".container");
 const userResult = document.querySelector(".user_result img");
 const computerResult = document.querySelector(".computer_result img");
 const result = document.querySelector(".result");
