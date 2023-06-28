@@ -30,14 +30,20 @@ body {
 
 .score_area {
     margin-top: 3rem;
+    margin-bottom: 2rem;
+    align-items: center;
 }
 
 .user_result {
-    background-color: rgba(0, 128, 0 , 0.2)    
+    background-color: rgba(0, 128, 0 , 0.2);  
+    border-radius: 10px;
+    box-shadow: 0 7px 12px rgba(0, 0, 0 , 0.2);
 }
 
 .computer_result {
-    background-color: rgba(128, 0, 0 , 0.2)    
+    background-color: rgba(128, 0, 0 , 0.2);  
+    border-radius: 10px;
+    box-shadow: 0 7px 12px rgba(0, 0, 0 , 0.2);  
 }
 
 #player_score {
@@ -62,6 +68,7 @@ body {
 .result_images { 
     display: flex;
     column-gap: 10rem;
+    padding: 2rem 0;
 }
 
 .result_images img{
@@ -118,15 +125,19 @@ body {
 }
 
 
-/*Set media query for screens 800px wide and less */
-@media (max-width: 800px){
+/*Set media query for screens 900px wide and less */
+@media (max-width: 900px){
     .container {
         width: 100%;
-        height: fit-content;        
+        height: fit-content;         
+        padding: 20px 10px;   
     }
 
     .result_images {
         column-gap: 3rem;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
     }
 
     .option img{
@@ -134,8 +145,7 @@ body {
     }
 
     .heading {
-        font-size: 1.2rem;
-           
+        font-size: 1.2rem;           
     }
 }
 
