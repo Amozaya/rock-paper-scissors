@@ -132,7 +132,7 @@ body {
     }
 }
 
-/*Set media query for screens 800px wide and less */
+/*Set media query for screens 500px wide and less */
 @media (max-width: 500px){
     .result_images {
         column-gap: 25px;
@@ -149,5 +149,25 @@ body {
 
     .option img{
         width: 40px;
+    }
+}
+
+/*Set media query for screens 350px wide and less */
+@media (max-width: 350px){
+    .result_images {
+        column-gap: 5px;
+        padding: 0 10px;
+    }
+
+    .result_images img{
+        width: 40px;
+    }
+
+    .heading {
+        font-size: 1rem;           
+    }
+
+    .option img{
+        width: 20px;
     }
 }
