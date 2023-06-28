@@ -98,7 +98,6 @@ body {
     align-items: center;
     cursor: pointer;
     opacity: 0.5;
-    transition: opacity 0.3 ease;
 }
 
 /*Set the opacity back to 1 when player hovers the mouse or clicks on the option */
