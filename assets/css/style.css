@@ -112,7 +112,7 @@ body {
 
 
 /*Style tex for option descriptions and for player instructions*/
-.option p{
+.option span{
     font-size: 1rem;
     margin-top: 1rem;
 }
