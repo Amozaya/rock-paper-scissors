@@ -20,9 +20,9 @@ This section is describing all the existing features available on the page
 
 * **Score Counter**
 
--Score Counter keeps track of player's and computer's points after each match. If player wins they get 1 point, if player looses computer gets 1 point, and if its a draw no one gets a point
+-Score Counter keeps track of player's and computer's points after each match. If player wins they get 1 point, if player looses computer gets 1 point, and if its a draw then no one gets a point
 
--This section will help user to keep a track of the score the game to see who is winning
+-This section will help user to keep a track of the score of the game to see who is winning
 
 ![Score Counter Screenshot](assets/images/readme_images/score_counter.JPG)
 
