@@ -1,6 +1,6 @@
-# Game of "Rock Paper Scissors Lizzard Spoke"
+# Game of "Rock Paper Scissors Lizzard Spok"
 
-The game of "Rock Paper Scissors Lizzard Spoke" is based on a traditional game of "Rock Paper Scissors" but with some new options to choose from to make the game more interesting.
+The game of "Rock Paper Scissors Lizzard Spok" is based on a traditional game of "Rock Paper Scissors" but with some new options to choose from to make the game more interesting.
 
 On this website user can play the game against a computer, which is based purely on your luck, as computer selects the options randomly and there is no way to predict what computer will select next. Whoever gets the 5 points first wins the game!
 
@@ -8,11 +8,11 @@ On this website user can play the game against a computer, which is based purely
 
 ## Features
 
-This section is describing all the existing features available on the website
+This section is describing all the existing features available on the page
 
 * **Heading**
 
--A simple heading greating the user to the game of "Rock Paper Scissors Lizzard Spoke"
+-A simple heading greating user to the game of "Rock Paper Scissors Lizzard Spok"
 
 -This section will welcome the player and tell them the name of the game
 
@@ -30,7 +30,7 @@ This section is describing all the existing features available on the website
 
 -It shows the icon of the player's option and the icon of computer's randomly selected objects
 
--It will help player visually after each match to see what the selected options were
+-It will help player visually after each match to see what the selected options are. Also, to make it easier for a player, I matched the background of selections with the color of score counters: green for player's selection and red for computer's selection.
 
 ![Selections Screenshot](assets/images/readme_images/players_and_computers_selections.JPG)
 
@@ -52,9 +52,9 @@ This section is describing all the existing features available on the website
 
 * **Game Finished Message**
 
--Alert message notifying the player that they Won/Lost the game. Once player clicks on OK on the alert message th page will refresh and player can start a new game
+-Alert message notifying the player that they Won/Lost the game. Once player clicks OK on the alert message the page will refresh and player can start a new game
 
--Depending on the outocme of the game player will receive the message saying that they won the game, or they lost the game, and after they click OK the page will refresh, meaining if player wants to start a new game they don't have to refresh the page manually
+-Depending on the outcome of the game player will receive the message saying that they won or they lost the game, and after they click OK the page will refresh automatically. So, if player wants to start a new game they don't have to refresh the page manually
 
 ![Game Finished Message Screenshot](assets/images/readme_images/alert_message.JPG)
 
@@ -92,14 +92,18 @@ I didn't use any `H1` elements for headings in this project, but instead I used 
 
 ![CSS Validator Approved](assets/images/readme_images/css_validator.JPG)
 
-### Chrome Lighthouse testing
+* **JSHint**
 
-
+-I used JSHint Validator to check the JavaScript for errors. No erros were returned. The following metrics were returned:
+  * There are 9 functions in this file.
+  * Function with the largest signature take 2 arguments, while the median is 0.
+  * Largest function has 21 statements in it, while the median is 2.
+  * The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 
 ### Manual Testing
 
-In this section I did some manual testing, using various mobile devices, to ensure that website is responsive and adapts to different screen sizes.
+In this section I did some manual testing, using mobile device, to ensure that website is responsive and adapts to different screen sizes.
 
 * **Sony mobile phone**
 

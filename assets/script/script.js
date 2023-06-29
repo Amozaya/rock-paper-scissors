@@ -4,14 +4,12 @@ const computerResult = document.querySelector(".computer_result img");
 const result = document.querySelector(".result");
 optionImages = document.querySelectorAll(".option");
 
-
-
-
 // Loops through each image in the options
+// (this code is based on the YouTube tutorial here "https://www.youtube.com/watch?v=RC7NbjwP3QA")
 optionImages.forEach ((image, index) => {
     image.addEventListener('click', (e) => {
       
-        // Add selected image to class active to change the opacity back to 1 when clicked
+        // Add selected image to class active to change the opacity to 1 when clicked
         image.classList.add('active');
 
         // Remove active when clicking on a different option
@@ -112,7 +110,6 @@ function incrementComputerScore() {
     if (oldScore === 5){
         computerWon();
        }
-
 }
 
 // Notify the player that they won and refresh the page to start a new game
